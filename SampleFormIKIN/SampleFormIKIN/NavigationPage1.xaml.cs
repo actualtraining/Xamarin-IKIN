@@ -29,5 +29,10 @@ namespace SampleFormIKIN
             };
             await Navigation.PushAsync(new NavigationPage2(objPegawai));
         }
+
+        private async void tbHome_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

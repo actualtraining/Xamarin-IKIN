@@ -2,6 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SampleFormIKIN.NavigationPage1" Title="Navigation Page 1">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Home" Order="Primary" Icon="icon.png" x:Name="tbHome" Clicked="tbHome_Clicked" />
+        <ToolbarItem Text="Page 2" Order="Secondary" Clicked="btnKeHalaman2_Clicked" />
+    </ContentPage.ToolbarItems>
     <StackLayout>
         <Label Text="Halaman Navigation Page 1" FontSize="Large" />
         <Entry x:Name="txtNik" Placeholder="masukan nik" />
