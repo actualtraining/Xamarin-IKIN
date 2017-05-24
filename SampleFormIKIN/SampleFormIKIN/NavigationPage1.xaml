@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleFormIKIN.NavigationPage1" Title="Navigation Page 1">
+    <StackLayout>
+        <Label Text="Halaman Navigation Page 1" FontSize="Large" />
+        <Button Text="Ke Halaman 2" x:Name="Ke Halaman 2" />
+    </StackLayout>
+</ContentPage>

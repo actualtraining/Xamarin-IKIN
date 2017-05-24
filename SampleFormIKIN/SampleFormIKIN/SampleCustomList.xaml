@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleFormIKIN.SampleCustomList" Title="Sample Custom List">
+    <ListView ItemsSource="{Binding ListPegawai}" HasUnevenRows="True" Margin="3" ItemTapped="ListView_ItemTapped">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="7*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Pic}" WidthRequest="100" Grid.Column="0" /> 
+                        <StackLayout Grid.Column="1">
+                            <Label Text="{Binding Nama}" FontSize="Medium" HorizontalTextAlignment="Start" />
+                            <Label Text="{Binding Nik}" FontAttributes="Bold" HorizontalTextAlignment="Start" />
+                            <Label Text="{Binding Email}" TextColor="Blue" HorizontalTextAlignment="Start" />
+                            <Label Text="{Binding Umur}" HorizontalTextAlignment="Start" />
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
