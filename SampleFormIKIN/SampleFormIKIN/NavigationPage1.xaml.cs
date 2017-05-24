@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleFormIKIN.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,14 @@ namespace SampleFormIKIN
 
         private async void btnKeHalaman2_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NavigationPage2());
+            var objPegawai = new Pegawai
+            {
+                Nik = txtNik.Text,
+                Nama = txtNama.Text,
+                Email = txtEmail.Text,
+                Umur = Convert.ToInt32(txtUmur.Text)
+            };
+            await Navigation.PushAsync(new NavigationPage2(objPegawai));
         }
     }
 }

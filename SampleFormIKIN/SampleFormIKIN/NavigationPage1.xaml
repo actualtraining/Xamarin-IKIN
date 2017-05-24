@@ -4,6 +4,10 @@
              x:Class="SampleFormIKIN.NavigationPage1" Title="Navigation Page 1">
     <StackLayout>
         <Label Text="Halaman Navigation Page 1" FontSize="Large" />
+        <Entry x:Name="txtNik" Placeholder="masukan nik" />
+        <Entry x:Name="txtNama" Placeholder="masukan nama" />
+        <Entry x:Name="txtEmail" Placeholder="masukan email" Keyboard="Email" />
+        <Entry x:Name="txtUmur" Placeholder="masukan umur" Keyboard="Numeric" />
         <Button Text="Ke Halaman 2" x:Name="btnKeHalaman2" Clicked="btnKeHalaman2_Clicked" />
     </StackLayout>
 </ContentPage>
