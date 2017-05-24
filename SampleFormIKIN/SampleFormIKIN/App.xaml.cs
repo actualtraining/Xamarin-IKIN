@@ -14,7 +14,7 @@ namespace SampleFormIKIN
             InitializeComponent();
 
             //MainPage = new NavigationPage(new SamplePreference());
-            MainPage = new SampleMasterPage();
+            MainPage = new SampleTabbedPage();
         }
 
         protected override void OnStart()
