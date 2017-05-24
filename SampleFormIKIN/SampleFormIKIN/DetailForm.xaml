@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleFormIKIN.DetailForm" Title="Detail Form">
+
+    <ScrollView>
+        <StackLayout>
+
+            <Image Source="{Binding Pic}" />
+            <Label Text="Nik" FontSize="Medium"/>
+            <Entry Text="{Binding Nik}" />
+            <Label Text="Nama" FontSize="Medium" />
+            <Entry Text="{Binding Nama}" />
+            <Label Text="Email" />
+            <Entry Text="{Binding Email}" />
+            <Label Text="Umur" />
+            <Entry Text="{Binding Umur}" />
+            <Picker x:Name="samplePicker" Title="Pilihan" 
+                    SelectedIndexChanged="samplePicker_SelectedIndexChanged" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

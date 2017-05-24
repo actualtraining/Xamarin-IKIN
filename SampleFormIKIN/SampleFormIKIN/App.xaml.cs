@@ -13,7 +13,7 @@ namespace SampleFormIKIN
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NavigationPage1());
+            MainPage = new NavigationPage(new SampleCustomList());
         }
 
         protected override void OnStart()

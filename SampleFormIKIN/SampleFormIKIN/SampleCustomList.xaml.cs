@@ -23,8 +23,25 @@ namespace SampleFormIKIN
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Pegawai objPegawai = (Pegawai)e.Item;
-            await DisplayAlert("Keterangan", "Nik : " + objPegawai.Nik + " Nama :" + objPegawai.Nama +
-                " Email :" + objPegawai.Email, "OK");
+            var detailForm = new DetailForm();
+            detailForm.BindingContext = objPegawai;
+            await Navigation.PushModalAsync(detailForm);
+        }
+
+        private async void btnShowAlert_Clicked(object sender, EventArgs e)
+        {
+            var result = await DisplayAlert("Konfirmasi", "Pertanyaan ?", "Yes", "No");
+            if (result)
+                await DisplayAlert("Keterangan", "Anda menjawab yes", "OK");
+            else
+                await DisplayAlert("Keterangan", "Anda menjawab no", "OK");
+        }
+
+        private async void btnActionSheet_Clicked(object sender, EventArgs e)
+        {
+            var result = await DisplayActionSheet("Pilihan?", "Cancel", null,
+                "C#", "VB", "Java", "Kotlin");
+            await DisplayAlert("Keterangan", "Anda memilih " + result,"OK");
         }
     }
 }
