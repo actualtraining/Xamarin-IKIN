@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleFormIKIN.SamplePreference" Title="Sample Preference">
+    <StackLayout>
+        <Label Text="Masukan ID :" FontSize="Medium" />
+        <Entry x:Name="txtID" Placeholder="masukan id" />
+        <Button x:Name="btnSetAppCurrent" Text="Set App Current" Clicked="btnSetAppCurrent_Clicked" />
+        <Button x:Name="btnShowAppCurent" Text="Show App Current" Clicked="btnShowAppCurent_Clicked" />
+    </StackLayout>
+</ContentPage>

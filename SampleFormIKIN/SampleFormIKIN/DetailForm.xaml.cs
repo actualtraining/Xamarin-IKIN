@@ -22,8 +22,6 @@ namespace SampleFormIKIN
                 { "satu", "C#" },{"dua","VB"},{"tiga","Kotlin"},{"empat","Java"}
             };
 
-           
-
             foreach(var myPick in dictBahasa)
             {
                 samplePicker.Items.Add(myPick.Value);

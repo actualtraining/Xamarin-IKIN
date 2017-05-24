@@ -38,12 +38,19 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactPage.xaml.cs">
+      <DependentUpon>ContactPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DetailForm.xaml.cs">
       <DependentUpon>DetailForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MasterPageItem.cs" />
     <Compile Include="Model\Pegawai.cs" />
     <Compile Include="NavigationPage1.xaml.cs">
       <DependentUpon>NavigationPage1.xaml</DependentUpon>
@@ -60,6 +67,12 @@
     </Compile>
     <Compile Include="SampleList.xaml.cs">
       <DependentUpon>SampleList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SampleMasterPage.xaml.cs">
+      <DependentUpon>SampleMasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePreference.xaml.cs">
+      <DependentUpon>SamplePreference.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\PegawaiViewModel.cs" />
   </ItemGroup>
@@ -119,6 +132,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DetailForm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SamplePreference.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SampleMasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MasterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContactPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
