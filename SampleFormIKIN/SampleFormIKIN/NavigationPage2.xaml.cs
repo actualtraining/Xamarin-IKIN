@@ -16,5 +16,10 @@ namespace SampleFormIKIN
         {
             InitializeComponent();
         }
+
+        private void btnKembali_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
     }
 }

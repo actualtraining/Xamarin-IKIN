@@ -4,6 +4,6 @@
              x:Class="SampleFormIKIN.NavigationPage1" Title="Navigation Page 1">
     <StackLayout>
         <Label Text="Halaman Navigation Page 1" FontSize="Large" />
-        <Button Text="Ke Halaman 2" x:Name="Ke Halaman 2" />
+        <Button Text="Ke Halaman 2" x:Name="btnKeHalaman2" Clicked="btnKeHalaman2_Clicked" />
     </StackLayout>
 </ContentPage>

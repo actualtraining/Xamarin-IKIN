@@ -16,5 +16,10 @@ namespace SampleFormIKIN
         {
             InitializeComponent();
         }
+
+        private async void btnKeHalaman2_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage2());
+        }
     }
 }
