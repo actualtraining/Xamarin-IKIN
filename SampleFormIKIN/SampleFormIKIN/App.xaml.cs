@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleFormIKIN.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,12 +10,22 @@ namespace SampleFormIKIN
 {
     public partial class App : Application
     {
+        private static DataAccessPegawai dbUtils;
+        public static DataAccessPegawai DbUtils
+        {
+            get {
+                if (dbUtils == null)
+                    dbUtils = new DataAccessPegawai();
+                return dbUtils;
+            }
+        }
+
         public App()
         {
             InitializeComponent();
 
             //MainPage = new NavigationPage(new SamplePreference());
-            MainPage = new SampleTabbedPage();
+            MainPage = new TambahPegawai();
         }
 
         protected override void OnStart()

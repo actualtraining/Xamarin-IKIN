@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleFormIKIN.TambahPegawai" Title="Tambah Pegawai">
+    <StackLayout>
+        <Label Text="Nik" FontSize="Medium"/>
+        <Entry x:Name="txtNik" />
+        <Label Text="Nama" FontSize="Medium" />
+        <Entry x:Name="txtNama" />
+        <Label Text="Email" />
+        <Entry x:Name="txtEmail"  />
+        <Label Text="Umur" />
+        <Entry x:Name="txtUmur" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Tambah" x:Name="btnTambah" Clicked="btnTambah_Clicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

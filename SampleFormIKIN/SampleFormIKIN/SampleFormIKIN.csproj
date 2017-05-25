@@ -41,6 +41,7 @@
     <Compile Include="ContactPage.xaml.cs">
       <DependentUpon>ContactPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DataAccessPegawai.cs" />
     <Compile Include="DetailForm.xaml.cs">
       <DependentUpon>DetailForm.xaml</DependentUpon>
     </Compile>
@@ -90,6 +91,9 @@
     </Compile>
     <Compile Include="SampleTabbedPageTab1.xaml.cs">
       <DependentUpon>SampleTabbedPageTab1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TambahPegawai.xaml.cs">
+      <DependentUpon>TambahPegawai.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\PegawaiViewModel.cs" />
   </ItemGroup>
@@ -215,6 +219,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SampleTabbedPageTab1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TambahPegawai.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
