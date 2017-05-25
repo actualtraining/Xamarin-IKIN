@@ -95,6 +95,9 @@
     <Compile Include="TambahPegawai.xaml.cs">
       <DependentUpon>TambahPegawai.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TampilDataPegawai.xaml.cs">
+      <DependentUpon>TampilDataPegawai.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\PegawaiViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +228,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TambahPegawai.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TampilDataPegawai.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

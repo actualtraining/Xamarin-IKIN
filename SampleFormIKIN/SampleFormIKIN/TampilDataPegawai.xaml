@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleFormIKIN.TampilDataPegawai" Title="Tampil Data Pegawai">
+    <StackLayout>
+        <Button x:Name="btnTambah" Text="Tambah" Clicked="btnTambah_Clicked"/>
+        <ListView x:Name="listViewPegawai">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nik}" Detail="{Binding Nama}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+   
+</ContentPage>

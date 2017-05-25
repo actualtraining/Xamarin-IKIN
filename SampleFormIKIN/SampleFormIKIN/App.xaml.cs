@@ -25,7 +25,7 @@ namespace SampleFormIKIN
             InitializeComponent();
 
             //MainPage = new NavigationPage(new SamplePreference());
-            MainPage = new TambahPegawai();
+            MainPage = new NavigationPage(new TampilDataPegawai());
         }
 
         protected override void OnStart()

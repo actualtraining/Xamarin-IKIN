@@ -31,7 +31,8 @@ namespace SampleFormIKIN
             try
             {
                 App.DbUtils.SavePegawai(newPegawai);
-                await DisplayAlert("Keterangan", "Data berhasil ditambah !", "OK");   
+                await DisplayAlert("Keterangan", "Data berhasil ditambah !", "OK");
+                await Navigation.PopAsync();
             }
             catch (Exception ex)
             {
